@@ -39,10 +39,6 @@ El backend de la aplicación está construido con Express y Sequelize. Aquí est
 5. Inicia el servidor con `npm start`.
 6. Abre `http://localhost:3000` en tu navegador.
 
-## Pruebas
-
-Las pruebas unitarias se realizan con Jest y React Testing Library. Puedes ejecutar las pruebas con `npm test`.
-
 ## Contribuir
 
 Las contribuciones son bienvenidas. Por favor, abre un issue para discutir la contribución antes de hacer un pull request.
