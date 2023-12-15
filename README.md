@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Contact App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Descripción
 
-## Available Scripts
+Contact App es una aplicación web que permite a los usuarios gestionar sus contactos. Los usuarios pueden agregar, editar y eliminar contactos. Cada contacto tiene un nombre, un número de teléfono y una dirección de correo electrónico.
 
-In the project directory, you can run:
+## Tecnologías utilizadas
 
-### `npm start`
+- Frontend: React
+- Backend: Express, Sequelize
+- Base de datos: PostgreSQL
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Estructura del proyecto
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+El proyecto se divide en dos partes principales: el frontend y el backend.
 
-### `npm test`
+### Frontend
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+El frontend de la aplicación está construido con React. Aquí están los componentos principales:
 
-### `npm run build`
+- `App.js`: Este es el componente principal de la aplicación. Define las rutas de la aplicación.
+- `ListaContactos.js`: Este componente muestra una lista de todos los contactos. Los usuarios pueden agregar nuevos contactos y eliminar contactos existentes desde aquí.
+- `DetallesContacto.js`: Este componente muestra los detalles de un contacto específico. Los usuarios pueden editar la información del contacto desde aquí.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Backend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+El backend de la aplicación está construido con Express y Sequelize. Aquí están los archivos principales:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- `server.js`: Este es el punto de entrada del servidor. Inicia el servidor y define las rutas de la API.
+- `models/contacto.js`: Este archivo define el modelo de Sequelize para los contactos.
+- `controllers/ContactoController.js`: Este controlador define las operaciones CRUD para los contactos.
 
-### `npm run eject`
+## Cómo ejecutar el proyecto
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Clona el repositorio.
+2. Instala las dependencias con `npm install`.
+3. Inicia la base de datos PostgreSQL.
+4. Ejecuta las migraciones de Sequelize con `npx sequelize-cli db:migrate`.
+5. Inicia el servidor con `npm start`.
+6. Abre `http://localhost:3000` en tu navegador.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Pruebas
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Las pruebas unitarias se realizan con Jest y React Testing Library. Puedes ejecutar las pruebas con `npm test`.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Contribuir
 
-## Learn More
+Las contribuciones son bienvenidas. Por favor, abre un issue para discutir la contribución antes de hacer un pull request.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Licencia
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Este proyecto está licenciado bajo la licencia MIT.
